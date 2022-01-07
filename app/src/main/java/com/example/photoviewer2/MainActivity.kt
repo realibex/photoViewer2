@@ -3,6 +3,7 @@ package com.example.photoviewer2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.Toast
 //import androidx.databinding.DataBindingUtil
@@ -73,6 +74,13 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("data","9")
             startActivity(intent)
         }*/
+        //데이터 바인딩 시도
+
+        Log.e("MainActivity", "error로그 입니다")
+        Log.w("MainActivity", "warn로그 입니다")
+        Log.i("MainActivity", "info로그 입니다")
+        Log.d("MainActivity", "debug로그 입니다")
+        Log.v("MainActivity", "verbose로그 입니다")
 
         val btn1 = findViewById<ImageView>(R.id.img1)
         val btn2 = findViewById<ImageView>(R.id.img2)
@@ -89,6 +97,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this,ImageInsideActivity::class.java)
             intent.putExtra("data","1")
+            Log.d("MainActivity", "Img1 클릭")
             startActivity(intent)
 
         }
