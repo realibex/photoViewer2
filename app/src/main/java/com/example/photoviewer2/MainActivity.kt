@@ -4,13 +4,76 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.Toast
+//import androidx.databinding.DataBindingUtil
+//import com.example.photoviewer2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    //private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        /*binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.img1.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","1")
+            Toast.makeText(this,"데이터 바인딩", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
+
+        binding.img2.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","2")
+            startActivity(intent)
+        }
+
+        binding.img3.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","3")
+            startActivity(intent)
+        }
+
+        binding.img4.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","4")
+            startActivity(intent)
+        }
+
+        binding.img5.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","5")
+            startActivity(intent)
+        }
+
+        binding.img6.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","6")
+            startActivity(intent)
+        }
+
+        binding.img7.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","7")
+            startActivity(intent)
+        }
+
+        binding.img8.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","8")
+            startActivity(intent)
+        }
+
+        binding.img9.setOnClickListener{
+            val intent = Intent(this,ImageInsideActivity::class.java)
+            intent.putExtra("data","9")
+            startActivity(intent)
+        }*/
+
         val btn1 = findViewById<ImageView>(R.id.img1)
         val btn2 = findViewById<ImageView>(R.id.img2)
         val btn3 = findViewById<ImageView>(R.id.img3)
@@ -21,12 +84,6 @@ class MainActivity : AppCompatActivity() {
         val btn8 = findViewById<ImageView>(R.id.img8)
         val btn9 = findViewById<ImageView>(R.id.img9)
 
-        btn1.setOnClickListener{
-
-            val intent = Intent(this,ImageInsideActivity::class.java)
-            startActivity(intent)
-
-        }
 
         btn1.setOnClickListener{
 
@@ -98,6 +155,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("data", "9")
             startActivity(intent)
         }
+
+
     }
 
 }
